@@ -4,9 +4,9 @@ class F
 	{
 		for(int  i=0;i<arr.length;i++)
 		{
-			for(int j=0;j<arr.length;j++)
+			for(int j=i+1;j<arr.length;j++)
 			{
-				if(arr[i] < arr[j])
+				if(arr[j] < arr[i])
 				{
 					int temp = arr[i];
 					arr[i] = arr[j];
@@ -16,7 +16,7 @@ class F
 		}
 		for(int i=0;i<arr.length;i++)
 		{
-			System.out.println(arr[i]);
+			System.out.print(arr[i]+" ");
 		}
 		
 		
